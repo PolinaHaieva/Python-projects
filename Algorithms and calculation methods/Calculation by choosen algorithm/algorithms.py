@@ -9,7 +9,7 @@ def second_alg(b, z, d):
         else:
             return "y = cos(w * f)"
     else:
-        return "Ділення на нуль!"
+        return "Division by zero!"
 
 
 def factorial(a):
@@ -26,4 +26,4 @@ def third_alg(a, b):
         fact2 = factorial(a-b)
         return num/fact2
     else:
-        return "Непраильно введені дані!"
+        return "Incorrect input data!"
