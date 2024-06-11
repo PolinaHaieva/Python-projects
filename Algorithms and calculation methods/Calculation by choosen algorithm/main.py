@@ -15,9 +15,9 @@ class Lab_one:
                 b = float(entB.get())
                 c = float(entC. get())
                 y = first_alg(a, b, c)
-                messagebox.showinfo("Результат", y)
+                messagebox.showinfo("Result", y)
             self.root1 = Toplevel(self.root)
-            self.root1.title("Перший алгоритм")
+            self.root1.title("First Algorithm")
             self.root.geometry("450x300")
             Label(self.root1, font="Arial 12", text="Y = (a*c)^2+(b*c)^3+(с*с)^4").grid(
                 row=0, column=1, columnspan=3)
@@ -31,9 +31,9 @@ class Lab_one:
             entB.grid(row=3, column=1)
             entC.grid(row=4, column=1)
             Button(self.root1, font="Arial 13",
-                   text="Завантажити", command=from_file, width=15).grid(row=5, column=1)
+                   text="Upload", command=from_file, width=15).grid(row=5, column=1)
             Button(self.root1, font="Arial 13",
-                   text="Розрахувати", command=calculation, width=15).grid(row=6, column=1)
+                   text="Calculate", command=calculation, width=15).grid(row=6, column=1)
             self.root1.mainloop()
 
         def second_window():
@@ -46,12 +46,12 @@ class Lab_one:
                 b = float(entB.get())
                 d = float(entD. get())
                 y = second_alg(b, z, d)
-                messagebox.showinfo("Результат", y)
+                messagebox.showinfo("Result", y)
 
             self.root2 = Toplevel(self.root)
-            self.root2.title("Другий алгоритм")
+            self.root2.title("Second Algorithm")
             self.root2.geometry("300x200")
-            Label(self.root2, font="Arial 12", text="Якщо b/z>d то y=sin(w*f)\nВ іншому випадку y=cos(w*f)").grid(
+            Label(self.root2, font="Arial 12", text="If b/z>d then y=sin(w*f)\nOtherwise y=cos(w*f)").grid(
                 row=0, column=1)
             Label(self.root2, font="Arial 13", text="Z:").grid(row=2, column=0)
             Label(self.root2, font="Arial 13", text="B:").grid(row=3, column=0)
@@ -63,9 +63,9 @@ class Lab_one:
             entB.grid(row=3, column=1)
             entD.grid(row=4, column=1)
             Button(self.root2, font="Arial 13",
-                   text="Завантажити", command=from_file, width=13).grid(row=5, column=1)
+                   text="Upload", command=from_file, width=13).grid(row=5, column=1)
             Button(self.root2, font="Arial 13",
-                   text="Розрахувати", command=calculation, width=13).grid(row=6, column=1)
+                   text="Calculate", command=calculation, width=13).grid(row=6, column=1)
             self.root2.mainloop()
 
         def third_window():
@@ -76,10 +76,10 @@ class Lab_one:
                 a = int(entA.get())
                 b = int(entB.get())
                 y = third_alg(a, b)
-                messagebox.showinfo("Результат", y)
+                messagebox.showinfo("Result", y)
 
             self.root3 = Toplevel(self.root)
-            self.root3.title("Третій алгоритм")
+            self.root3.title("Third Algorithm")
             self.root3.geometry("300x200")
             Label(self.root3, font="Arial 12", text="f=a!*b/(a-b)!").grid(
                 row=1, column=1)
@@ -90,9 +90,9 @@ class Lab_one:
             entA.grid(row=2, column=1)
             entB.grid(row=3, column=1)
             Button(self.root3, font="Arial 13",
-                   text="Завантажити", command=from_file, width=13).grid(row=4, column=1)
+                   text="Upload", command=from_file, width=13).grid(row=4, column=1)
             Button(self.root3, font="Arial 13",
-                   text="Розрахувати", command=calculation, width=13).grid(row=5, column=1)
+                   text="Calculate", command=calculation, width=13).grid(row=5, column=1)
             self.root3.mainloop()
 
         def upload(number, space):
@@ -104,10 +104,10 @@ class Lab_one:
                 self.entries = entries
 
         self.root = Tk()
-        self.root.title("Лабораторна робота 1")
+        self.root.title("Laboratory work 1")
         self.root.geometry("425x200")
         Label(self.root, font="Arial 13",
-              text="Оберіть алгоритм").grid(row=0, column=1)
+              text="Choose Algorithm").grid(row=0, column=1)
         Button(self.root, font="Arial 11", text="Перший",
                command=first_window, width=13).grid(row=1, column=0)
         Button(self.root, font="Arial 11", text="Другий",
